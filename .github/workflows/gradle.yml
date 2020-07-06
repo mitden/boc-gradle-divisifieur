@@ -25,5 +25,10 @@ jobs:
     - name: Build with Gradle
       run: ./gradlew build
     - name: On divise
-      run: java -jar build/libs/boc-gradle-hello-world.jar 3 2
+      run: java -jar build/libs/*.jar 3 2
+    - name: Upload math result for job 2
+      uses: actions/upload-artifact@v1
+      with:
+        name: monbeaujar
+        path: build/libs/*.jar
 
