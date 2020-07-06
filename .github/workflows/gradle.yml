@@ -26,9 +26,9 @@ jobs:
       run: ./gradlew build
     - name: On divise
       run: java -jar build/libs/*.jar 3 2
-    - name: Upload math result for job 2
+    - name: Upload mon beau jar
       uses: actions/upload-artifact@v1
       with:
         name: monbeaujar
-        path: build/libs/*.jar
+        path: build/libs/boc-gradle-divisifieur.jar
 
