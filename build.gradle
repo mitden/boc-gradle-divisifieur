@@ -6,7 +6,7 @@ jar {
 	manifest {
 		attributes(
 				'Class-Path': configurations.compile.collect { it.getName() }.join(' '),
-				'Main-Class': 'com.example.project.Hello'
+				'Main-Class': 'com.github.dorval.francois.controller.Main'
 		)
 	}
 }
@@ -16,7 +16,7 @@ repositories {
 }
 
 dependencies {
-	testImplementation('org.junit.jupiter:junit-jupiter:5.6.0')
+	testImplementation 'junit:junit:4.13'
 }
 
 test {
