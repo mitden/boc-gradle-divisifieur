@@ -25,4 +25,4 @@ jobs:
     - name: Build with Gradle
       run: ./gradlew build
     - name : Run jar with args
-        run: java -jar build/libs/*.jar 3 1
+      run: java -jar build/libs/*.jar 3 1
