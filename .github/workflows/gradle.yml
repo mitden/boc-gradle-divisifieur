@@ -27,7 +27,7 @@ jobs:
     - name : Run jar with args
       run: java -jar build/libs/*.jar 3 1
     - name: Upload jar to artifact
-        uses: actions/upload-artifact@v1
+      uses: actions/upload-artifact@v1
         with:
           name: mon-diviseur
           path: build/libs/*.jar
