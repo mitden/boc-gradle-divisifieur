@@ -9,4 +9,5 @@ public class Errors {
 
     public static String PARAMETRE_NON_ENTIER = "parametre non entier";
 
+    public static String DIVISION_PAR_ZERO = "Division par zero";
 }
